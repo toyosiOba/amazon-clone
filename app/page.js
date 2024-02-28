@@ -1,113 +1,434 @@
 import Image from "next/image";
+import { IconChevronLeft, IconChevronRight } from "./_assets/icons/Icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+    <main className="bg-clr-bg-grey-2">
+      {/* HERO */}
+      <section className="max-w-375 h-150 relative mx-auto">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/images/hero-img-1.jpg"
+          sizes="100vw"
+          alt="International women's day shop gifts"
+          fill
         />
-      </div>
+        <div className="absolute left-0 top-0 flex h-56 w-20 items-center justify-center rounded-sm border-green-800 text-5xl outline-1 outline-white hover:border-2 hover:outline">
+          <IconChevronLeft />
+        </div>
+        <div className="absolute right-0 top-0 flex h-56 w-20 items-center justify-center rounded-sm border-green-800 text-5xl outline-1 outline-white hover:border-2 hover:outline">
+          <IconChevronRight />
+        </div>
+        <div className="gradient-1 absolute bottom-0 left-0 right-0 top-56"></div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      {/* FEATURE HOST */}
+      <section className="max-w-375 -mt-94 relative mx-auto px-4">
+        {/* FEATURED CONTAINER */}
+        <div className="grid grid-cols-4 gap-5">
+          {/* ROW 1 START */}
+          {/* FEATURE 1 */}
+          <div className="bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">Gaming accessories</h4>
+            {/* GAMING ACCESSORIES CONTAINER */}
+            <div className="mb-7 grid grid-cols-2 gap-x-4 gap-y-7">
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/gaming-acc-headset-jpeg.jpg"
+                    alt="headset"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Headsets</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/gaming-acc-keyboard-jpeg.jpg"
+                    alt="headset"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Keyboards</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/gaming-acc-mouse-jpeg.jpg"
+                    alt="computer mouse"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Computer mice</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/gaming-acc-chair-jpeg.jpg"
+                    alt="chair"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Chairs</p>
+              </div>
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              See more
+            </Link>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          {/* FEATURE 2 */}
+          <div className="grid grid-rows-[auto_1fr_auto] bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">Deals in PC</h4>
+            <div className="relative mb-7 border">
+              <Image
+                src="/images/Deals-in-PC-Desktop-jpeg.jpg"
+                alt="Desktop"
+                sizes="25vw"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover"
+            >
+              See more
+            </Link>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          {/* FEATURE 3 */}
+          <div className="bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">Refresh your space</h4>
+            {/* GAMING ACCESSORIES CONTAINER */}
+            <div className="mb-7 grid grid-cols-2 gap-x-4 gap-y-7">
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/refresh-your-space-dining.jpg"
+                    alt="Glass filled with water"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Dining</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/refresh-your-space-home.jpg"
+                    alt="hanged clothes"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Home</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/refresh-your-space-kitchen.jpg"
+                    alt="raw food ingredients on a table"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Kitchen</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/refresh-your-space-health-and-beauty.jpg"
+                    alt="body spray"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Health and Beauty</p>
+              </div>
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              See more
+            </Link>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          {/* FEATURE 4 */}
+          <div className="grid grid-rows-[auto_1fr_auto] bg-white p-5 pb-4 ">
+            <h4 className="pb-2 text-xl font-bold">Amazon Gadget Store</h4>
+            {/* STORE CONTAINER */}
+            <div className="mb-7 grid grid-rows-[3fr_2fr] gap-y-7">
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-full">
+                  <Image
+                    src="/images/amazon-gadget-store-smartphones.jpg"
+                    alt="headset"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-sm">Smartphones</p>
+              </div>
+
+              <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-rows-[1fr_auto]">
+                  {/* IMG CONTAINER */}
+                  <div className="relative">
+                    <Image
+                      src="/images/amazon-gadget-store-tablets.jpg"
+                      alt="man holding a tablet"
+                      className="object-cover"
+                      fill
+                    />
+                  </div>
+                  <p className="text-sm">Tablets</p>
+                </div>
+
+                <div className="grid grid-rows-[1fr_auto]">
+                  {/* IMG CONTAINER */}
+                  <div className="relative">
+                    <Image
+                      src="/images/amazon-gadget-store-laptops.jpg"
+                      alt="lady smiling at a laptop"
+                      className="object-cover"
+                      fill
+                    />
+                  </div>
+                  <p className="text-sm">Laptops</p>
+                </div>
+
+                <div className="grid grid-rows-[1fr_auto]">
+                  {/* IMG CONTAINER */}
+                  <div className="relative">
+                    <Image
+                      src="/images/amazon-gadget-store-tvs.jpg"
+                      alt="TV in a living room"
+                      className="object-cover"
+                      fill
+                    />
+                  </div>
+                  <p className="text-sm">TVs</p>
+                </div>
+              </div>
+            </div>
+
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover"
+            >
+              See more from Amazon Gadgets
+            </Link>
+          </div>
+          {/* ROW 1 END */}
+
+          {/* ROW 2 START */}
+          {/* FEATURE 5 */}
+          <div className="bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">
+              Handpicked music and audio
+            </h4>
+            {/* GRID CONTAINER */}
+            <div className="mb-7 grid grid-cols-2 gap-x-4 gap-y-7">
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/music-and-audio-headphones.jpg"
+                    alt="female dress on a green background"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Headphones</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/music-and-audio-guitar.jpg"
+                    alt="hanged dress"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Guitars</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/music-and-audio-keyboard.jpg"
+                    alt="computer mouse"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Keyboards</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/music-and-audio-microphone.jpg"
+                    alt="chair"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Microphones</p>
+              </div>
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              See more curated tech
+            </Link>
+          </div>
+
+          {/* FEATURE 6 */}
+          <div className="grid grid-rows-[auto_1fr_auto] bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">Top Deal </h4>
+            <div className="flex justify-center">
+              <div className="relative mb-7 w-24">
+                <Image
+                  src="/images/top-deal.jpg"
+                  alt="woman in dress"
+                  sizes="25vw"
+                  fill
+                  className=""
+                />
+              </div>
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover"
+            >
+              See all deals
+            </Link>
+          </div>
+
+          {/* FEATURE 7 */}
+          <div className="grid grid-rows-[auto_1fr_auto] bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">
+              Celebrate the women in your life
+            </h4>
+            <div className="relative mb-7">
+              <Image
+                src="/images/womens-day-dash-card.jpg"
+                alt="various women item"
+                sizes="25vw"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover"
+            >
+              Shop gifts
+            </Link>
+          </div>
+
+          {/* FEATURE 8 */}
+          <div className="bg-white p-5 pb-4">
+            <h4 className="pb-2 text-xl font-bold">Fashion trends you like</h4>
+            {/* GRID CONTAINER */}
+            <div className="mb-7 grid grid-cols-2 gap-x-4 gap-y-7">
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/fashion-trends-dresses.jpg"
+                    alt="female dress on a green background"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Dresses</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/fashion-trends-knits.jpg"
+                    alt="hanged dress"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Knits</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/fashion-trends-jackets.jpg"
+                    alt="computer mouse"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Jackets</p>
+              </div>
+              {/* SINGLE ACCESSORY */}
+              <div className="">
+                {/* IMG CONTAINER */}
+                <div className="relative h-28">
+                  <Image
+                    src="/images/fashion-trends-jewelry.jpg"
+                    alt="chair"
+                    className="object-cover"
+                    fill
+                  />
+                </div>
+                <p className="text-xs">Jewelry</p>
+              </div>
+            </div>
+            <Link
+              href="#"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              Explore more
+            </Link>
+          </div>
+          {/* ROW 2 END */}
+        </div>
+      </section>
     </main>
   );
 }

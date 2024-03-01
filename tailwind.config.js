@@ -7,12 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: { "amazon-media": "url('/images/amazon-media.png')" },
       maxWidth: {
         375: "93.75rem",
         370: "92.5rem",
       },
       spacing: {
         94: "23.5rem",
+        57.5: "14.375rem",
         150: "37.5rem",
       },
       colors: {

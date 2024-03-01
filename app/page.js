@@ -648,6 +648,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white pb-5  pt-10 text-black">
+        <hr className="h-px bg-clr-bg-grey-2" />
+        <div className="mb-5 mt-10 flex justify-center px-5 text-center">
+          <div className="">
+            <p className="text-sm font-bold leading-none">
+              See personalized recommendations
+            </p>
+            <Link
+              href="#"
+              className="max-w-57.5 bg-amazon-media my-1 block text-xs font-bold leading-7"
+              style={{ backgroundPosition: "-10px -170px" }}
+            >
+              Sign in
+            </Link>
+            <p className="text-xs">
+              New customer?{" "}
+              <Link href="#" className="text-[#007185]">
+                Start here.
+              </Link>
+            </p>
+          </div>
+        </div>
+        <hr className="h-px bg-clr-bg-grey-2" />
+      </section>
     </main>
   );
 }

@@ -1,13 +1,6 @@
 @tailwind base;
 @tailwind components;
 
-@layer base {
-  img {
-    width: 100%;
-    display: block;
-  }
-}
-
 * {
   box-sizing: border-box;
 }

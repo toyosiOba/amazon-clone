@@ -6,6 +6,10 @@ import {
   FeaturedItemSingle,
   FeaturedItemMultiple,
 } from "./_components/FeaturedItem";
+import { DealItem } from "./_components/DealItem";
+import HomeDecorItem from "./_components/HomeDecorItem";
+import ButtonProductRightScroll from "./_components/ButtonProductRightScroll";
+import ButtonProductLeftScroll from "./_components/ButtonProductLeftScroll";
 
 export default function Home() {
   return (
@@ -241,12 +245,10 @@ export default function Home() {
             <BestSellerItem width={189} category={"kitchen-and-dinning-25"} />
             <BestSellerItem width={184} category={"kitchen-and-dinning-26"} />
             <BestSellerItem width={169} category={"kitchen-and-dinning-27"} />
-            <button className="absolute left-0 top-16 flex items-center rounded-r bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronLeft className="text-lg" />
-            </button>
-            <button className="absolute right-0 top-16 flex items-center rounded-l bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronRight className="text-lg" />
-            </button>
+
+            {/* SCROLL BUTTONS */}
+            <ButtonProductLeftScroll />
+            <ButtonProductRightScroll />
           </div>
         </div>
 
@@ -287,12 +289,10 @@ export default function Home() {
             <BestSellerItem width={133} category={"books-28"} />
             <BestSellerItem width={133} category={"books-29"} />
             <BestSellerItem width={133} category={"books-30"} />
-            <button className="absolute left-0 top-16 flex items-center rounded-r bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronLeft className="text-lg" />
-            </button>
-            <button className="absolute right-0 top-16 flex items-center rounded-l bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronRight className="text-lg" />
-            </button>
+
+            {/* SCROLL BUTTONS */}
+            <ButtonProductLeftScroll />
+            <ButtonProductRightScroll />
           </div>
         </div>
 
@@ -364,15 +364,288 @@ export default function Home() {
             <BestSellerItem width={40} category={"beauty-22"} />
             <BestSellerItem width={78} category={"beauty-23"} />
             <BestSellerItem width={113} category={"beauty-24"} />
-            <button className="absolute left-0 top-16 flex items-center rounded-r bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronLeft className="text-lg" />
-            </button>
-            <button className="absolute right-0 top-16 flex items-center rounded-l bg-white px-3 py-9 shadow-sm shadow-black">
-              <IconChevronRight className="text-lg" />
-            </button>
+
+            {/* SCROLL BUTTONS */}
+            <ButtonProductLeftScroll />
+            <ButtonProductRightScroll />
+          </div>
+        </div>
+
+        {/* DEALS UNDER $25 */}
+        <div className="mb-5 bg-white p-5 pb-4">
+          <div className="mb-2 flex items-center gap-5">
+            <h4 className="text-xl font-bold">Deals under $25</h4>
+            <Link
+              href="/"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              See more
+            </Link>
           </div>
 
-          {/* DEALS UNDER $25 */}
+          {/* FLEX ITEMS CONTAINER */}
+          <div className="flex flex-nowrap gap-4 overflow-x-auto">
+            <DealItem
+              src="/images/deals-under-25-1.jpg"
+              width={135}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-2.jpg"
+              width={140}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Rand MCNally 2024 Large Scale Road..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-3.jpg"
+              width={131}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Habit of the Household Practicing th..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-4.jpg"
+              width={124}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="ESV Large Print Value Thinline Bible (T..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-5.jpg"
+              width={168}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Picturepedia, Second Edition: An Ency..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-6.jpg"
+              width={282}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="o.b. Applicator Free Digital Tan"
+            />
+
+            <DealItem
+              src="/images/deals-under-25-7.jpg"
+              width={130}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-8.jpg"
+              width={133}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-9.jpg"
+              width={114}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-10.jpg"
+              width={214}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-11.jpg"
+              width={465}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-12.jpg"
+              width={200}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-13.jpg"
+              width={83}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-14.jpg"
+              width={164}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-15.jpg"
+              width={218}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-16.jpg"
+              width={100}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-17.jpg"
+              width={148}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+
+            <DealItem
+              src="/images/deals-under-25-18.jpg"
+              width={233}
+              discount={16}
+              newPrice={24.8}
+              listPrice={29.54}
+              description="Nature's Bounty Calcium Plus 1000 IU..."
+            />
+          </div>
+        </div>
+
+        {/* ROW START */}
+        <div className="mb-5 grid grid-cols-4 gap-5">
+          <FeaturedItemMultiple
+            heading="Warm & Welcoming decor"
+            link="Shop more fall finds"
+            src1="/images/warm-and-welcoming-decor-1.jpg"
+            caption1="Wreaths & garlands"
+            src2="/images/warm-and-welcoming-decor-2.jpg"
+            caption2="Outdoor decor"
+            src3="/images/warm-and-welcoming-decor-3.jpg"
+            caption3="Pillows & throws"
+            src4="/images/warm-and-welcoming-decor-4.jpg"
+            caption4="Wall art & mirrors"
+          />
+
+          <FeaturedItemSingle
+            heading="Personal Care under $25"
+            link="See more"
+            src="/images/personal-care-under-25.jpg"
+          />
+
+          <FeaturedItemSingle
+            heading="Creating business solutions"
+            link="See more software products"
+            src="/images/creating-business-solutions.jpg"
+          />
+
+          <FeaturedItemSingle
+            heading="Upgrade your office furniture"
+            link="Shop now"
+            src="/images/upgrade-your-office-furniture.jpg"
+          />
+        </div>
+        {/* ROW END */}
+
+        <div className="mb-5 bg-white p-5 pb-4">
+          <div className="mb-2 flex items-center gap-5">
+            <h4 className="text-xl font-bold">Home Decor Under $20</h4>
+            <Link
+              href="/"
+              className="text-xs text-clr-link hover:text-clr-link-hover hover:underline"
+            >
+              Shop now
+            </Link>
+          </div>
+
+          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+            <HomeDecorItem width={207} number={"1"} />
+            <HomeDecorItem width={318} number={"2"} />
+            <HomeDecorItem width={210} number={"3"} />
+            <HomeDecorItem width={242} number={"4"} />
+            <HomeDecorItem width={200} number={"5"} />
+            <HomeDecorItem width={255} number={"6"} />
+            <HomeDecorItem width={280} number={"7"} />
+            <HomeDecorItem width={198} number={"8"} />
+            <HomeDecorItem width={255} number={"9"} />
+            <HomeDecorItem width={207} number={"10"} />
+            <HomeDecorItem width={200} number={"11"} />
+            <HomeDecorItem width={188} number={"12"} />
+            <HomeDecorItem width={190} number={"13"} />
+            <HomeDecorItem width={200} number={"14"} />
+          </div>
+        </div>
+
+        {/* BEST SELLERS IN PERSONAL CARE */}
+        <div className="mb-5 bg-white p-5 pb-4">
+          <h4 className="pb-2 text-xl font-bold">
+            Best Sellers in Beauty & Personal Care
+          </h4>
+
+          {/* FLEX ITEMS CONTAINER */}
+          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+            {/* SINGLE ITEM */}
+            <BestSellerItem top width={133} category={"books-1"} />
+            <BestSellerItem top width={130} category={"books-2"} />
+            <BestSellerItem top width={133} category={"books-3"} />
+            <BestSellerItem top width={125} category={"books-4"} />
+            <BestSellerItem top width={133} category={"books-5"} />
+            <BestSellerItem top width={134} category={"books-6"} />
+            <BestSellerItem top width={130} category={"books-7"} />
+            <BestSellerItem top width={120} category={"books-8"} />
+            <BestSellerItem top width={133} category={"books-9"} />
+            <BestSellerItem top width={133} category={"books-10"} />
+            <BestSellerItem top width={125} category={"books-11"} />
+            <BestSellerItem top width={133} category={"books-12"} />
+            <BestSellerItem top width={129} category={"books-13"} />
+            <BestSellerItem top width={133} category={"books-14"} />
+            <BestSellerItem top width={125} category={"books-15"} />
+            <BestSellerItem top width={133} category={"books-16"} />
+            <BestSellerItem top width={133} category={"books-17"} />
+            <BestSellerItem top width={143} category={"books-18"} />
+            <BestSellerItem top width={132} category={"books-19"} />
+
+            {/* SCROLL BUTTONS */}
+            <ButtonProductLeftScroll />
+            <ButtonProductRightScroll />
+          </div>
         </div>
       </section>
     </main>

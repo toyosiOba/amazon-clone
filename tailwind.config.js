@@ -24,6 +24,7 @@ module.exports = {
         "clr-grey-3": "#999",
         "clr-bg-grey-1": "#E3E6E6",
         "clr-bg-grey-2": "#E6E6E6",
+        "clr-bg-fade": "rgba(15,17,17, 0.03)",
         "clr-bg-yellow": "#FEBD69",
         "clr-deal": "#CC0C39",
         "clr-link": "#007185",

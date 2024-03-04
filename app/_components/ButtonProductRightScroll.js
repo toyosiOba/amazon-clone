@@ -1,4 +1,4 @@
-import { IconChevronRight } from "../_assets/icons/Icons";
+import { IconChevronRight } from "../_assets/icons";
 
 export default function ButtonProductRightScroll() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconChevronLeft, IconChevronRight } from "./_assets/icons/Icons";
+import { IconChevronLeft, IconChevronRight } from "./_assets/icons";
 import Link from "next/link";
 import BestSellerItem from "./_components/BestSellerItem";
 import {
@@ -658,7 +658,7 @@ export default function Home() {
             </p>
             <Link
               href="#"
-              className="max-w-57.5 bg-amazon-media my-1 block text-xs font-bold leading-7"
+              className="my-1 block max-w-57.5 bg-amazon-media text-xs font-bold leading-7"
               style={{ backgroundPosition: "-10px -170px" }}
             >
               Sign in

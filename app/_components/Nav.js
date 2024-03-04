@@ -3,7 +3,7 @@ import {
   CartIcon,
   IconHamburgerMenu,
   LocationIcon,
-} from "@/app/_assets/icons/Icons";
+} from "@/app/_assets/icons";
 import Image from "next/image";
 import NavForm from "./NavForm";
 import Link from "next/link";
@@ -12,18 +12,9 @@ function Nav() {
   return (
     <header className="">
       {/* NAV MAIN */}
-      <div className="flex items-center gap-4 bg-clr-primary px-2 py-2">
+      <div className="bg-clr-bg-main-1 flex items-center gap-4 px-2 py-2">
         {/* amazon logo */}
-        <div className="px-2 py-2">
-          <Image
-            src="/images/amazon-logo.png"
-            sizes="96px"
-            alt="amazon logo"
-            className=""
-            width={96}
-            height={40}
-          />
-        </div>
+        <div className="mx-2 my-2 h-7 w-24 bg-amazon-media-logo bg-[-10px_-51px]"></div>
         <div className="my-1 flex items-center gap-px pr-1 text-sm font-bold leading-none text-white">
           <LocationIcon className="mr-1 text-lg" />
           <div>

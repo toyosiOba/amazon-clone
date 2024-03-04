@@ -2,8 +2,8 @@
 @tailwind components;
 
 @layer base {
-  img {
-    display: block;
+  ul {
+    @apply list-none;
   }
 }
 

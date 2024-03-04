@@ -7,20 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: { "amazon-media": "url('/images/amazon-media.png')" },
+      backgroundImage: {
+        "amazon-media": "url('/images/amazon-media.png')",
+        "amazon-media-logo": "url('/images/amazon-media-logo.png')",
+      },
       maxWidth: {
         375: "93.75rem",
         370: "92.5rem",
+        250: "62.5rem",
       },
       spacing: {
-        94: "23.5rem",
+        19: "4.75rem",
         57.5: "14.375rem",
+        94: "23.5rem",
         150: "37.5rem",
       },
       colors: {
         "clr-primary": "#0F1111",
         "clr-secondary": "#232F3E",
-        // "clr-secondary": "#131921",
+        "clr-bg-main-1": "#131921",
+        "clr-bg-main-2": "#131A22",
         "clr-grey-1": "#CCC",
         "clr-grey-2": "#DDD",
         "clr-grey-3": "#999",

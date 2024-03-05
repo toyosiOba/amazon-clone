@@ -18,6 +18,7 @@ module.exports = {
       },
       spacing: {
         19: "4.75rem",
+        50: "12.5rem",
         57.5: "14.375rem",
         94: "23.5rem",
         150: "37.5rem",
@@ -37,6 +38,7 @@ module.exports = {
         "clr-deal": "#CC0C39",
         "clr-link": "#007185",
         "clr-link-hover": "#C7511F",
+        "clr-scroll-thumb": "#aaa",
       },
     },
   },

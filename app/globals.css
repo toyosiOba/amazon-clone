@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @layer base {
   ul {
@@ -19,5 +20,3 @@ body {
 .gradient-1 {
   background: linear-gradient(-180deg, rgba(234, 237, 237, 0), #e3e6e6);
 }
-
-@tailwind utilities;

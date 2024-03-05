@@ -34,7 +34,6 @@ export function FeaturedItemMultiple({
   caption2,
   caption3,
   caption4,
-  link,
 }) {
   return (
     <div className="bg-white p-5 pb-4">
@@ -45,7 +44,13 @@ export function FeaturedItemMultiple({
         <div className="">
           {/* IMG CONTAINER */}
           <div className="relative h-28">
-            <Image src={src1} alt="" className="object-cover" fill />
+            <Image
+              src={src1}
+              alt=""
+              className="object-cover"
+              sizes="13vw"
+              fill
+            />
           </div>
           <p className="text-xs">{caption1}</p>
         </div>
@@ -53,7 +58,13 @@ export function FeaturedItemMultiple({
         <div className="">
           {/* IMG CONTAINER */}
           <div className="relative h-28">
-            <Image src={src2} alt="" className="object-cover" fill />
+            <Image
+              src={src2}
+              alt=""
+              className="object-cover"
+              sizes="13vw"
+              fill
+            />
           </div>
           <p className="text-xs">{caption2}</p>
         </div>
@@ -61,7 +72,13 @@ export function FeaturedItemMultiple({
         <div className="">
           {/* IMG CONTAINER */}
           <div className="relative h-28">
-            <Image src={src3} alt="" className="object-cover" fill />
+            <Image
+              src={src3}
+              alt=""
+              className="object-cover"
+              sizes="13vw"
+              fill
+            />
           </div>
           <p className="text-xs">{caption3}</p>
         </div>
@@ -69,7 +86,13 @@ export function FeaturedItemMultiple({
         <div className="">
           {/* IMG CONTAINER */}
           <div className="relative h-28">
-            <Image src={src4} alt="" className="object-cover" fill />
+            <Image
+              src={src4}
+              alt=""
+              className="object-cover"
+              sizes="13vw"
+              fill
+            />
           </div>
           <p className="text-xs">{caption4}</p>
         </div>

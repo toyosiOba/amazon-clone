@@ -8,8 +8,7 @@ import {
 } from "./_components/FeaturedItem";
 import { DealItem } from "./_components/DealItem";
 import HomeDecorItem from "./_components/HomeDecorItem";
-import ButtonProductRightScroll from "./_components/ButtonProductRightScroll";
-import ButtonProductLeftScroll from "./_components/ButtonProductLeftScroll";
+import CustomHorizontalScroll from "./_components/CustomHorizontalScroll";
 
 export default function Home() {
   return (
@@ -84,6 +83,7 @@ export default function Home() {
                     alt="headset"
                     className="object-cover"
                     fill
+                    sizes="25vw"
                   />
                 </div>
                 <p className="text-sm">Smartphones</p>
@@ -98,6 +98,7 @@ export default function Home() {
                       alt="man holding a tablet"
                       className="object-cover"
                       fill
+                      sizes="13vw"
                     />
                   </div>
                   <p className="text-sm">Tablets</p>
@@ -111,6 +112,7 @@ export default function Home() {
                       alt="lady smiling at a laptop"
                       className="object-cover"
                       fill
+                      sizes="13vw"
                     />
                   </div>
                   <p className="text-sm">Laptops</p>
@@ -124,6 +126,7 @@ export default function Home() {
                       alt="TV in a living room"
                       className="object-cover"
                       fill
+                      sizes="13vw"
                     />
                   </div>
                   <p className="text-sm">TVs</p>
@@ -216,7 +219,7 @@ export default function Home() {
           </h4>
 
           {/* FLEX ITEMS CONTAINER */}
-          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+          <CustomHorizontalScroll>
             {/* SINGLE ITEM */}
             <BestSellerItem width={186} category={"kitchen-and-dinning-1"} />
             <BestSellerItem width={92} category={"kitchen-and-dinning-2"} />
@@ -245,11 +248,7 @@ export default function Home() {
             <BestSellerItem width={189} category={"kitchen-and-dinning-25"} />
             <BestSellerItem width={184} category={"kitchen-and-dinning-26"} />
             <BestSellerItem width={169} category={"kitchen-and-dinning-27"} />
-
-            {/* SCROLL BUTTONS */}
-            <ButtonProductLeftScroll />
-            <ButtonProductRightScroll />
-          </div>
+          </CustomHorizontalScroll>
         </div>
 
         {/* BEST SELLERS IN BOOKS */}
@@ -257,7 +256,7 @@ export default function Home() {
           <h4 className="pb-2 text-xl font-bold">Best Sellers in Books</h4>
 
           {/* FLEX ITEMS CONTAINER */}
-          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+          <CustomHorizontalScroll>
             {/* SINGLE ITEM */}
             <BestSellerItem width={132} category={"books-1"} />
             <BestSellerItem width={136} category={"books-2"} />
@@ -280,20 +279,16 @@ export default function Home() {
             <BestSellerItem width={133} category={"books-19"} />
             <BestSellerItem width={140} category={"books-20"} />
             <BestSellerItem width={132} category={"books-21"} />
-            <BestSellerItem width={187} category={"books-22"} />
-            <BestSellerItem width={125} category={"books-23"} />
-            <BestSellerItem width={194} category={"books-24"} />
-            <BestSellerItem width={144} category={"books-25"} />
+            <BestSellerItem width={125} category={"books-22"} />
+            <BestSellerItem width={194} category={"books-23"} />
+            <BestSellerItem width={154} category={"books-24"} />
+            <BestSellerItem width={138} category={"books-25"} />
             <BestSellerItem width={130} category={"books-26"} />
             <BestSellerItem width={133} category={"books-27"} />
             <BestSellerItem width={133} category={"books-28"} />
-            <BestSellerItem width={133} category={"books-29"} />
+            <BestSellerItem width={129} category={"books-29"} />
             <BestSellerItem width={133} category={"books-30"} />
-
-            {/* SCROLL BUTTONS */}
-            <ButtonProductLeftScroll />
-            <ButtonProductRightScroll />
-          </div>
+          </CustomHorizontalScroll>
         </div>
 
         {/* ROW START */}
@@ -338,8 +333,7 @@ export default function Home() {
           </h4>
 
           {/* FLEX ITEMS CONTAINER */}
-          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
-            {/* SINGLE ITEM */}
+          <CustomHorizontalScroll>
             <BestSellerItem width={92} category={"beauty-1"} />
             <BestSellerItem width={124} category={"beauty-2"} />
             <BestSellerItem width={156} category={"beauty-3"} />
@@ -364,11 +358,7 @@ export default function Home() {
             <BestSellerItem width={40} category={"beauty-22"} />
             <BestSellerItem width={78} category={"beauty-23"} />
             <BestSellerItem width={113} category={"beauty-24"} />
-
-            {/* SCROLL BUTTONS */}
-            <ButtonProductLeftScroll />
-            <ButtonProductRightScroll />
-          </div>
+          </CustomHorizontalScroll>
         </div>
 
         {/* DEALS UNDER $25 */}
@@ -384,7 +374,7 @@ export default function Home() {
           </div>
 
           {/* FLEX ITEMS CONTAINER */}
-          <div className="flex flex-nowrap gap-4 overflow-x-auto">
+          <CustomHorizontalScroll>
             <DealItem
               src="/images/deals-under-25-1.jpg"
               width={135}
@@ -546,7 +536,7 @@ export default function Home() {
               listPrice={29.54}
               description="Nature's Bounty Calcium Plus 1000 IU..."
             />
-          </div>
+          </CustomHorizontalScroll>
         </div>
 
         {/* ROW START */}
@@ -595,7 +585,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+          <CustomHorizontalScroll>
             <HomeDecorItem width={207} number={"1"} />
             <HomeDecorItem width={318} number={"2"} />
             <HomeDecorItem width={210} number={"3"} />
@@ -610,7 +600,7 @@ export default function Home() {
             <HomeDecorItem width={188} number={"12"} />
             <HomeDecorItem width={190} number={"13"} />
             <HomeDecorItem width={200} number={"14"} />
-          </div>
+          </CustomHorizontalScroll>
         </div>
 
         {/* BEST SELLERS IN PERSONAL CARE */}
@@ -620,7 +610,7 @@ export default function Home() {
           </h4>
 
           {/* FLEX ITEMS CONTAINER */}
-          <div className="relative flex flex-nowrap gap-4 overflow-x-scroll">
+          <CustomHorizontalScroll>
             {/* SINGLE ITEM */}
             <BestSellerItem top width={133} category={"books-1"} />
             <BestSellerItem top width={130} category={"books-2"} />
@@ -641,11 +631,7 @@ export default function Home() {
             <BestSellerItem top width={133} category={"books-17"} />
             <BestSellerItem top width={143} category={"books-18"} />
             <BestSellerItem top width={132} category={"books-19"} />
-
-            {/* SCROLL BUTTONS */}
-            <ButtonProductLeftScroll />
-            <ButtonProductRightScroll />
-          </div>
+          </CustomHorizontalScroll>
         </div>
       </section>
 

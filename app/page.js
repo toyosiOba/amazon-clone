@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { IconChevronLeft, IconChevronRight } from "./_assets/icons";
 import Link from "next/link";
 import BestSellerItem from "./_components/BestSellerItem";
 import {
@@ -9,29 +8,16 @@ import {
 import { DealItem } from "./_components/DealItem";
 import HomeDecorItem from "./_components/HomeDecorItem";
 import CustomHorizontalScroll from "./_components/CustomHorizontalScroll";
+import Hero from "./_components/Carousel";
 
 export default function Home() {
   return (
     <main className="bg-clr-bg-grey-2">
       {/* HERO */}
-      <section className="relative mx-auto h-150 max-w-375">
-        <Image
-          src="/images/hero-img-1.jpg"
-          sizes="100vw"
-          alt="International women's day shop gifts"
-          fill
-        />
-        <div className="absolute left-0 top-0 flex h-56 w-20 items-center justify-center rounded-sm border-green-800 text-5xl outline-1 outline-white hover:border-2 hover:outline">
-          <IconChevronLeft />
-        </div>
-        <div className="absolute right-0 top-0 flex h-56 w-20 items-center justify-center rounded-sm border-green-800 text-5xl outline-1 outline-white hover:border-2 hover:outline">
-          <IconChevronRight />
-        </div>
-        <div className="gradient-1 absolute bottom-0 left-0 right-0 top-56"></div>
-      </section>
+      <Hero />
 
       {/* FEATURE HOST */}
-      <section className="relative mx-auto -mt-94 max-w-375 px-4">
+      <section className="relative z-20 mx-auto -mt-94 max-w-375 px-4">
         {/* FEATURED CONTAINER */}
         <div className="mb-5 grid grid-cols-4 gap-5">
           {/* ROW 1 START */}

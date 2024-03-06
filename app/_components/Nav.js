@@ -12,7 +12,7 @@ function Nav() {
   return (
     <header className="">
       {/* NAV MAIN */}
-      <div className="bg-clr-bg-main-1 flex items-center gap-4 px-2 py-2">
+      <div className="flex items-center gap-4 bg-clr-bg-main-1 px-2 py-2">
         {/* amazon logo */}
         <div className="mx-2 my-2 h-7 w-24 bg-amazon-media-logo bg-[-10px_-51px]"></div>
         <div className="my-1 flex items-center gap-px pr-1 text-sm font-bold leading-none text-white">
@@ -80,23 +80,38 @@ function Nav() {
 
         {/* SHOP LINKS */}
         <div className="flex">
-          <Link href="/" className="border-white hover:border">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-white"
+          >
             <span className="my-1 inline-block px-3 py-2">
               Today&apos;s Deals
             </span>
           </Link>
-          <Link href="/" className="border-white hover:border">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-white"
+          >
             <span className="my-1 inline-block px-3 py-2 ">
               Customer Service
             </span>
           </Link>
-          <Link href="/" className="border-white hover:border">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-white"
+          >
             <span className="my-1 inline-block px-3 py-2 ">Registry</span>
           </Link>
-          <Link href="/" className="border-white hover:border">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-white"
+          >
             <span className="my-1 inline-block px-3 py-2 ">Gift Cards</span>
           </Link>
-          <Link href="/" className="border-white hover:border">
+          <Link
+            href="/"
+            className="border border-transparent hover:border-white"
+          >
             <span className="my-1 inline-block px-3 py-2 ">Sell</span>
           </Link>
         </div>

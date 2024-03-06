@@ -66,41 +66,33 @@ function CustomHorizontalScroll({ children }) {
     }
 
     function handleRightButton() {
-      const newLeft = thumb.offsetLeft + thumbWidth;
-
-      if (newLeft >= 0 && newLeft <= maxLeft) {
-        const scrollPercentage = newLeft / maxLeft;
-        // smoothly scroll container
-        container.scrollTo({
-          left:
-            scrollPercentage * (content.scrollWidth - container.offsetWidth),
-          behavior: "smooth",
-        });
-      } else if (newLeft >= maxLeft && thumb.offsetLeft <= maxLeft) {
+      if (content.scrollWidth - container.scrollLeft < container.offsetWidth) {
         container.scrollTo({
           left: content.scrollWidth - container.offsetWidth,
           behavior: "smooth",
         });
+        return;
       }
+
+      container.scrollTo({
+        left: container.scrollLeft + container.offsetWidth,
+        behavior: "smooth",
+      });
     }
 
     function handleLeftButton() {
-      const newLeft = thumb.offsetLeft - thumbWidth;
-
-      if (newLeft >= 0) {
-        const scrollPercentage = newLeft / maxLeft;
-        // smoothly scroll container
-        container.scrollTo({
-          left:
-            scrollPercentage * (content.scrollWidth - container.offsetWidth),
-          behavior: "smooth",
-        });
-      } else if (newLeft < 0 && thumb.offsetLeft >= 0) {
+      if (container.scrollLeft < container.offsetWidth) {
         container.scrollTo({
           left: 0,
           behavior: "smooth",
         });
+        return;
       }
+
+      container.scrollTo({
+        left: container.scrollLeft - container.offsetWidth,
+        behavior: "smooth",
+      });
     }
 
     return () => {

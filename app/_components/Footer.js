@@ -206,7 +206,12 @@ export default function Footer() {
             <button className="flex items-center gap-2 rounded border border-clr-grey-3 p-2 pr-8 leading-none">
               {/* FLAG CONTAINER */}
               <div className="relative h-3 w-4">
-                <Image src="/images/usa-flag.png" fill alt="USA flag" />
+                <Image
+                  src="/images/usa-flag.png"
+                  fill
+                  alt="USA flag"
+                  sizes="20px"
+                />
               </div>
               United States
             </button>
@@ -215,8 +220,8 @@ export default function Footer() {
       </div>
 
       {/* FOOTER DESCRIPTION */}
-      <div className="bg-clr-bg-main-2 flex flex-col items-center justify-center gap-8 px-2 py-7 text-xs">
-        <ul className="max-w-250 grid grid-cols-7 gap-7 text-clr-grey-3">
+      <div className="flex flex-col items-center justify-center gap-8 bg-clr-bg-main-2 px-2 py-7 text-xs">
+        <ul className="grid max-w-250 grid-cols-7 gap-7 text-clr-grey-3">
           {/* ROW 1 START */}
           <FooterDescItem
             heading="Amazon Music"
